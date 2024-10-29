@@ -1,0 +1,122 @@
+[
+    {
+        "equipment_Id": "E101",
+        "Historical_Operational_Cycles": 3075,
+        "Predicted_Operational_Cycles": 6404,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E102",
+        "Historical_Operational_Cycles": 2331,
+        "Predicted_Operational_Cycles": 3592.81,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E103",
+        "Historical_Operational_Cycles": 5930,
+        "Predicted_Operational_Cycles": 5738.81,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E104",
+        "Historical_Operational_Cycles": 6422,
+        "Predicted_Operational_Cycles": 4285.3,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E105",
+        "Historical_Operational_Cycles": 7371,
+        "Predicted_Operational_Cycles": 5060.05,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E106",
+        "Historical_Operational_Cycles": 9796,
+        "Predicted_Operational_Cycles": 5069.11,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E107",
+        "Historical_Operational_Cycles": 8686,
+        "Predicted_Operational_Cycles": 7865.09,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E108",
+        "Historical_Operational_Cycles": 8503,
+        "Predicted_Operational_Cycles": 4447.673,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E109",
+        "Historical_Operational_Cycles": 3233,
+        "Predicted_Operational_Cycles": 6756.23,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E110",
+        "Historical_Operational_Cycles": 4544,
+        "Predicted_Operational_Cycles": 4285.93,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E111",
+        "Historical_Operational_Cycles": 2250,
+        "Predicted_Operational_Cycles": 2756.99,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E112",
+        "Historical_Operational_Cycles": 164,
+        "Predicted_Operational_Cycles": 7631.37,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E113",
+        "Historical_Operational_Cycles": 4348,
+        "Predicted_Operational_Cycles": 7755.44,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E114",
+        "Historical_Operational_Cycles": 5529,
+        "Predicted_Operational_Cycles": 7146.82,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E115",
+        "Historical_Operational_Cycles": 2173,
+        "Predicted_Operational_Cycles": 4405.95,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E116",
+        "Historical_Operational_Cycles": 6213,
+        "Predicted_Operational_Cycles": 5329.2,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E117",
+        "Historical_Operational_Cycles": 5613,
+        "Predicted_Operational_Cycles": 1174.62,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E118",
+        "Historical_Operational_Cycles": 837,
+        "Predicted_Operational_Cycles": 4548.82,
+        "Going_To_Fail_or_Not": "YES"
+    },
+    {
+        "equipment_Id": "E119",
+        "Historical_Operational_Cycles": 8461,
+        "Predicted_Operational_Cycles": 2186.72,
+        "Going_To_Fail_or_Not": "No"
+    },
+    {
+        "equipment_Id": "E120",
+        "Historical_Operational_Cycles": 7294,
+        "Predicted_Operational_Cycles": 4897.224,
+        "Going_To_Fail_or_Not": "No"
+    }
+]

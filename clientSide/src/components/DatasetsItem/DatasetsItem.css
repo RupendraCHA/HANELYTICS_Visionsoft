@@ -1,0 +1,17 @@
+.dataset-button {
+  background-color: #099fb3;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 600;
+  padding: 5px;
+  height: 50px;
+  width: 130px;
+  margin: 20px 0 10px 0;
+}
+.dataset-button:hover {
+  background-color: #a90a0a;
+  color: #fff;
+}
