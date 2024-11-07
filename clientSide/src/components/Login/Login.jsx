@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import "./logIn.css"
 import Navbar from '../Navbar/Navbar'
 import { toast } from 'react-toastify'
+import { StoreContext } from '../../context/StoreContext'
 
 function Login() {
 
@@ -12,9 +13,10 @@ function Login() {
     const [password, setPassword] = useState('')
     // const [failed, setFailed] = useState('')
     const navigate = useNavigate()
+    const {backendURL} = useContext(StoreContext)
 
     useEffect(() => {
-        axios.get("http://localhost:3002/home")
+        axios.get(`${backendURL}home`)
             .then(result => {
                 console.log(result)
                 if (result.data !== "Successful") {
@@ -33,7 +35,7 @@ function Login() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3002/login', { email, password })
+        axios.post(`${backendURL}login`, { email, password })
             .then(result => {
                 console.log(result.data)
                 if (result.data === "Login Successful!") {

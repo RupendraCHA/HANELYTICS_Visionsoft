@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import "./initialPage.css"
 import axios from 'axios'
+import { StoreContext } from '../../context/StoreContext'
 
 function InitialPage() {
     const navigate = useNavigate()
+    const {backendURL} = useContext(StoreContext)
+
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get('http://localhost:3002/home')
+        axios.get(`${backendURL}home`)
             .then(result => {
                 console.log(result)
                 if (result.data !== "Successful") {

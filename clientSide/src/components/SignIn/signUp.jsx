@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import "./signIn.css"
 import Navbar from '../Navbar/Navbar'
 import { toast } from 'react-toastify'
+import { StoreContext } from '../../context/StoreContext'
 
 function SignUp() {
 
@@ -13,10 +14,11 @@ function SignUp() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const navigate = useNavigate()
+    const {backendURL} = useContext(StoreContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3002/register', { name, email, password })
+        axios.post(`${backendURL}register`, { name, email, password })
             .then(result => {
                 console.log(result)
                 toast.success("User Registered")

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
@@ -10,13 +10,15 @@ import "./Navbar.css"
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = () => {
 
     const navigate = useNavigate()
+    const {backendURL} = useContext(StoreContext)
 
     const handleLogout = () => {
-        axios.get("http://localhost:3002/logout")
+        axios.get(`${backendURL}logout`)
             .then(result => {
                 if (result.data === "Logout Successful!") {
                     toast.success(result.data)
