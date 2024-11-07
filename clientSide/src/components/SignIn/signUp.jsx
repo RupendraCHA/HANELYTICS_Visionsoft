@@ -18,7 +18,7 @@ function SignUp() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post(`${backendURL}register`, { name, email, password })
+        axios.post(backendURL + "/register", { name, email, password })
             .then(result => {
                 console.log(result)
                 toast.success("User Registered")

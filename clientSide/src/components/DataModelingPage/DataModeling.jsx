@@ -27,7 +27,7 @@ import { StoreContext } from '../../context/StoreContext.jsx';
 const DataModeling = () => {
 
 
-    let endpointsArray = ['getInventoryData', 'getRevenueData', 'getEquipmentData', 'getClinicalData']
+    // let endpointsArray = ['getInventoryData', 'getRevenueData', 'getEquipmentData', 'getClinicalData']
 
     const inventory_model_datasets = [
         'Order History Data',
@@ -73,10 +73,10 @@ const DataModeling = () => {
     const {backendURL} = useContext(StoreContext)
 
 
-    // axios.defaults.withCredentials = true;
+    axios.defaults.withCredentials = true;
 
     useEffect(() => {
-        axios.get(`${backendURL}home`)
+        axios.get(backendURL + "/home")
             .then(result => {
                 console.log(result)
                 if (result.data !== "Successful") {
@@ -90,7 +90,7 @@ const DataModeling = () => {
 
     const handleLogout = () => {
         // alert("Do you want to Log out!!")
-        axios.get(`${backendURL}logout`)
+        axios.get(backendURL + "/logout")
             .then(result => {
                 console.log(result.data)
                 if (result.data === "Logout Successful!") {
@@ -101,7 +101,7 @@ const DataModeling = () => {
     }
 
     const getInventoryDataFromMongoDB = async () => {
-        await axios.get(`${backendURL}getInventoryData`)
+        await axios.get(backendURL + "/getInventoryData")
             .then(result => {
                 const Array = result.data
                 // const largeArray = Array.from({ length: 634 }, (_, i) => i);
@@ -117,7 +117,7 @@ const DataModeling = () => {
     }
 
     const getRevenueDataFromMongoDB = async () => {
-        await axios.get(`${backendURL}getRevenueData`)
+        await axios.get(backendURL + "/getRevenueData")
             .then(result => {
                 const Array = result.data
                 // const largeArray = Array.from({ length: 634 }, (_, i) => i);
@@ -133,7 +133,7 @@ const DataModeling = () => {
     }
 
     const getEquipmentDataFromMongoDB = async () => {
-        await axios.get(`${backendURL}getEquipmentData`)
+        await axios.get(backendURL + "/getEquipmentData")
             .then(result => {
                 const Array = result.data
                 // const largeArray = Array.from({ length: 634 }, (_, i) => i);
@@ -149,7 +149,7 @@ const DataModeling = () => {
     }
 
     const getClinicalDataFromMongoDB = async () => {
-        await axios.get(`${backendURL}getClinicalData`)
+        await axios.get(backendURL + "/getClinicalData")
             .then(result => {
                 const Array = result.data
                 // const largeArray = Array.from({ length: 634 }, (_, i) => i);

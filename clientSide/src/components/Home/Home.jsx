@@ -14,7 +14,7 @@ function Home() {
 
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get(`${backendURL}home`)
+        axios.get(backendURL + "/home")
             .then(result => {
                 console.log(result)
                 if (result.data !== "Successful") {

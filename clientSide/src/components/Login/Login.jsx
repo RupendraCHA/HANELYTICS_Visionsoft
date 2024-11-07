@@ -16,7 +16,7 @@ function Login() {
     const {backendURL} = useContext(StoreContext)
 
     useEffect(() => {
-        axios.get(`${backendURL}home`)
+        axios.get(backendURL + "/home")
             .then(result => {
                 console.log(result)
                 if (result.data !== "Successful") {
@@ -32,10 +32,10 @@ function Login() {
 
 
 
-    // axios.defaults.withCredentials = true;
+    axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post(`${backendURL}login`, { email, password })
+        axios.post(backendURL + "/login", { email, password })
             .then(result => {
                 console.log(result.data)
                 if (result.data === "Login Successful!") {
