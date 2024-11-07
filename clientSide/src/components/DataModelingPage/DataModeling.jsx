@@ -73,7 +73,7 @@ const DataModeling = () => {
     const {backendURL} = useContext(StoreContext)
 
 
-    axios.defaults.withCredentials = true;
+    // axios.defaults.withCredentials = true;
 
     useEffect(() => {
         axios.get(`${backendURL}home`)

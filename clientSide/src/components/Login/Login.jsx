@@ -32,7 +32,7 @@ function Login() {
 
 
 
-    axios.defaults.withCredentials = true;
+    // axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post(`${backendURL}login`, { email, password })
